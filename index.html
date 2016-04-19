@@ -1,0 +1,281 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SEGUNDA APLICACION</title>
+ 
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+ 
+<body onLoad="MM_preloadImages('imagenes/Semana-Santa.png','imagenes/semana_santa.png','imagenes/atlixco.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>SEMANA SANTA EN MEXICO</h1>
+  </div>
+ <div align ="center">
+   <p>&nbsp;</p>
+   <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes/semana_santa.png',1)"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/atlixco.jpg',1)"><img src="imagenes/Semana-Santa.jpg" width="650" height="482" id="Image18"></a></p>
+  </div>
+  
+<div>
+    <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>¿QUE ES SEMANA SANTA?</h2>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>¿QUE RELIGIONES LO CELEBRAN?</h2>
+       </a>
+     </li>
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>LA SEMANA SANTA EN ATLIXCO</h2>
+     </a>
+    </li>
+   <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>CELEBRACION EN EL ESTADO DE PUEBLA</h2>
+      </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+      <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>IZTAPALAPA</h2>
+     </a>
+      </li>
+        <li class="ui-first-child ui-last-child">
+      <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>SAN LUIS POTOSI</h2>
+     </a>
+      </li>
+        <li class="ui-first-child ui-last-child">
+      <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>GUERRERO</h2>
+     </a>
+      </li>
+        <li class="ui-first-child ui-last-child">
+      <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>OAXACA</h2>
+     </a>
+      </li>
+   </ul>
+</div>
+<div data-role="footer" align="center" data-theme="b">
+   <div>
+      <img src="imagenes/persona_rosa.png" width="46" height="46">
+   </div>
+   <div>
+     <h4>Aplicacion Dos</h4>
+     <h4>Norma Edith Ortega Flores</h4>
+   </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>¿QUE ES SEMANA SANTA?</h1>
+  </div>
+ <div data-role="content">
+  <div>
+     <h2>La Semana Santa es el momento litúrgico más intenso de todo el año. esta semana la debemos dedicar a la oración y la reflexión en los misterios de la Pasión y Muerte de Jesús para aprovechar todas las gracias que esto nos trae.</h2>
+     <h2>Para vivir la Semana Santa, debemos darle a Dios el primer lugar y participar en toda la riqueza de las celebraciones propias de este tiempo litúrgico.</h2>
+   
+  <img src="imagenes/imagen1.jpg" width="50%" height="50%">  
+  <h2>La Semana Santa fue la última semana de Cristo en la tierra. Su Resurrección nos recuerda que los hombres fuimos creados para vivir eternamente junto a Dios.</h2>
+    
+  <img src="imagenes/imagen2.jpg" width="50%" height="50%"> 
+  </div>
+  </div>
+<div data-role="footer" data-theme="b">
+ <h4>NORMA EDITH ORTEGA FLORES</h4>
+ </div>
+ </div>
+ </div>
+ 
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>¿QUE RELIGIONES LO CELEBRAN?</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <h2>Católicos:La Semana Mayor para los católicos es la época en la que se recuerda y celebra los hechos más relevantes en la vida de Jesús de Nazaret (la Pasión, Muerte y Resurrección), comenzando con el llamado Domingo de Ramos y finalizando el Domingo de Resurrección o también llamado de Pascua.</h2>
+ <img src="imagenes/imagen3.jpg" width="50%" height="50%"> 
+ <h2>Cristianos evangélicos:Para la iglesia cristiana, la Semana Santa es el tiempo para recordar la muerte de Cristo. Para conmemorarla, se congregan en una jornada de oración y adoración, la cual inicia el Jueves Santo a las 9:00 de la noche y se extiende por 24 horas.</h2>
+ <img src="imagenes/imagen4.jpg" width="50%" height="50%"> 
+<h2> Mormones:Por otro lado, la Semana Santa para los miembros de la Iglesia de Jesucristo de los Santos de los últimos Días más conocidos como mormones, les sirve para reflexionar como cada semana, sobre el sacrificio que hiciera Cristo y partir de ello afianzar la unión familiar.</h2>
+ <img src="imagenes/imagen5.jpg" width="50%" height="50%"> 
+ </div>
+ </div>
+ <div data-role="footer" data-theme="b">
+ <h4>NORMA EDITH ORTEGA FLORES</h4>
+ </div>
+ </div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>SEMANA SANTA EN ATLIXCO</h1>
+ </div>
+ <div data-role="content">
+
+ <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+  	<h1>El recorrido de los engrillados</h1>
+  <div>
+  <p>Una de las procesiones de Viernes Santo que más acapara la atención es la registrada en Atlixco con la presencia de los Engrillados, personas que encadenadas recorren las calles de referido municipio, las cuales portan coronas de espinas, así como púas o puntas que se colocan en distintas partes del cuerpo, principalmente en hombros y pies.</p>
+	<img src="imagenes/imagen7.jpg" width="50%" height="50%"> 
+ 	<p>Cada Viernes Santo en Atlixco, docenas de hombres participan en la procesión de Los Engrillados, una tradición con más de 100 años.</p>
+  <img src="imagenes/imagen8.jpg" width="50%" height="50%"> 
+  <p>Ya sea por manda o penitencia, los hombres encapuchados caminan al rededor de tres kilómetros, partiendo de la Iglesia de San Francisco, con espinas incrustadas al cuerpo y cargando cadenas de más de 50 kilogramos.</p>
+  <img src="imagenes/imagen10.jpg" width="50%" height="50%"> 
+   <p>La gente del lugar adorna las calles con alfombras de aserrín y los fieles hacen la procesión con las imágenes de diferentes parroquias. Algunos de los participantes en esta procesión, llevan más de 50 años caminando cada Viernes Santo.</p>
+      <img src="imagenes/imagen9.jpg" width="50%" height="50%"> 
+      <p>La creencia es que al caminar bajo estas condiciones, sus pecados serán perdonados, o bien, recibirán un milagro. También es una manera de agradecer a Jesucristo por los favores recibidos.</p>
+  </div>
+  </div>
+  </div>
+  
+      
+       <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Tapete Floral</h1>
+  <div>
+ En Atlixco se coloca un tapete de flores para celebrar Semana Santa así como para fines turisticos. </div>
+ <div> <img src="imagenes/imagen11.jpg" width="50%" height="50%"> </div>
+  </div>
+  </div>
+  </div>
+
+ <div data-role="footer" data-theme="b">
+ <h4>NORMA EDITH ORTEGA FLORES</h4>
+ </div>
+ </div>
+ </div>
+ 
+
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>CELEBRACION EN EL ESTADO DE PUEBLA</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <h2>La celebración de Semana Santa es para los poblanos una de las conmemoraciones más importantes del año cristiano; durante estos días aquellas personas que profesan alguna de las diferentes confesiones de la fe cristiana acuden a las iglesias más emblemáticas de Puebla para recordar la Pasión, Muerte y Resurrección de Jesús de Nazaret.</h2>
+ <h2>Una de los actos mas significativos durante la semana santa es la tradicional Procesión de Viernes.La Procesión de Viernes Santo, tiene como objetivo ser un encuentro de reflexión y renovación espiritual con el Señor, en su veinticinco edición, las cinco imágenes que recorren las principales calles del Centro Histórico de Puebla son consideradas entre las más representativas de Puebla, simbolizan este acontecimiento solemne de Fe, donde se contemplan con devoción la pasión y muerte de Jesucristo.</h2>
+ <img src="imagenes/puebla.jpg" width="50%" height="50%">
+ <h2>Esta tradición piadosa rescatada desde el año 1991 en Puebla, representa el caminar de Jesús, donde las imágenes más antiguas y con mayor número de devotos salen a recorrer las calles de Puebla, escenificando los misterios de la redención, culminando en punto de las tres de la tarde en la Catedral, para recordar la muerte de Jesucristo.</h2>
+ <h2>Desde el inicio de esta nueva etapa se decidió que únicamente cinco imágenes fueran cargadas en el cortejo, dos de la Virgen María y tres de Jesucristo. Las dos marianas aluden al momento dramático, pues son la Virgen Dolorosa y la Virgen de la Soledad y las otras de Jesús cargando la cruz a cuestas.</h2>
+ </div>
+</div> 
+ <div data-role="footer" data-theme="b">
+ <h4>NORMA EDITH ORTEGA FLORES</h4>
+ </div>
+ </div>
+ </div>
+
+ 
+  <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>IZTAPALAPA</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <h2>Los misioneros utilizaron el teatro para catequizar a los antiguos mexicanos y desterrar asi las prácticas religiosas anteriores.Las escenificaciones de la pasión,conmovian profundamente a los espectadores</h2>
+ <img src="imagenes/iztapalapa.jpg" width="50%" height="50%">
+ <h2>Del pasado llegan las voces que amalgaman en el presente una forma particular de sincretismo,donde las viejas costumbres,los componentes internos y extremos del drama,se llenan de nuevos contenidos sin desalojar completamente a las anteriores.</h2>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="b">
+ <h4>NORMA EDITH ORTEGA FLORES</h4>
+ </div>
+ </div>
+ </div>
+
+ 
+ 
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>SAN LUIS POTOSI</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <h2>El viernes es el día más esperado en la ciudad o, mejor dicho, es la noche más esperada. A eso de las ocho da inicio la insigne Procesión del Silencio que, a decir de muchos, es la más conmovedora del país. Dicho evento se ha celebrado sin interru´pción desde 1954</h2></div>
+ <img src="imagenes/imagen14.jpg" width="50%" height="50%">
+ <h2>Partiendo de la iglesia del Carmen, las cofradías desfilan a paso lastimero, cargando las pesadísimas imágenes de sus templos. El ritmo de tambores y trompetas es invocativo; la luz de las velas completa el cuadro surrealista.</h2>
+ </div>
+ <div data-role="footer" data-theme="b">
+ <h4>NORMA EDITH ORTEGA FLORES</h4>
+ </div>
+ </div>
+ </div>
+ 
+ <div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>GUERRERO</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <h2>La procesión del silencio de los hombres que se da el día jueves santo, rememora la agonía y oración de Jesús en el huerto de los olivos, la traición de Judas y el prendimiento de Jesús. La procesión del silencio de las mujeres que se da el día sábado santo, se integra en una especie de peregrinación de carácter reflexivo (sin cánticos ni rezos) para acompañar a la Virgen María en sus horas de pesar por el calvario y la muerte de Cristo.</h2></div>
+ <img src="imagenes/imagen15.jpg" width="50%" height="50%">
+ <h2>Sin embargo la fe cristiana abarca distintas doctrinas, en este caso, buscamos la opinión de un pastor evangélico, Josué Morales de la iglesia Cary Church of God, el pastor explica que dentro de la congregación se realizan algunos rituales, como: el amanecer del jueves, el lavatorio de los pies, la última cena, el camino a la cruz y la resurrección; siempre recordando la importancia y significado que encierran estos rituales, que no se trata de una costumbre cada año, sino de darle la importancia que merece la cruz y la resurrección de Cristo.</h2>
+ </div>
+ <div data-role="footer" data-theme="b">
+ <h4>NORMA EDITH ORTEGA FLORES</h4>
+ </div>
+ </div>
+ </div>
+ 
+ <div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>OAXACA</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <h2>Esta tradicion arranca desde la epoca colonial,y mas ciertamente desde cuando los padres jesuitas consagraron una espaciosa capilla de su templo magnifico a la virgen de los dolores,tributando culto solemne a la imagen.</h2></div>
+  <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>imagen</h1>
+ <div>
+  <img src="imagenes/oaxaca.jpg" width="50%" height="50%"> </div>
+  </div>
+  </div>
+ <h2>En la ciudad se acostumbra a dar aguas frescas y típicas de la región a todo aquel que acudía a los atrios de las iglesias, Actualmente se ofrecen de manera gratuita en: iglesias, casas particulares, hoteles, escuelas, restaurantes, dependencias gubernamentales, etc., a los transeúntes para que se deleiten con los diversos sabores, olores y colores característicos de esta festividad.</h2>
+ </div>
+ <div data-role="footer" data-theme="b">
+ <h4>NORMA EDITH ORTEGA FLORES</h4>
+ </div>
+ </div>
+ </div>
+ </body>
+ </html>
